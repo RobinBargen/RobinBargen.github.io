@@ -1,97 +1,77 @@
-* {
-    margin: 0px 0px 0px 0px;
+body { margin: 0; padding: 0; }
+
+.banner-container {
+	position: relative;
 }
-/* --- MENUBAR ---*/
+
+.banner-container img {
+	width: 100%;
+	height: auto;
+	background-size: cover;
+}
+
+.banner-top-left{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.banner-bottom-left {
+	position: absolute;
+	bottom: 8px;
+  	left: 0px;
+}
+
+.banner-container .banner-top-left { width: 100%; } 
+.banner-container .banner-bottom-left {
+	width: 100%;
+	bottom: 30px;
+	background-image: linear-gradient(
+		to right, 
+		rgba(206, 206, 206, 0.9) , 
+		rgba(206, 206, 206, 0.8),
+		rgba(206, 206, 206, 0.7),
+		rgba(206, 206, 206, 0.2),
+		rgba(206, 206, 206, 0)
+		);
+
+}
+.banner-container .banner-bottom-left * {
+	margin: 0px 0px 0px 50px; 
+	/*
+	-webkit-text-stroke-width: 0.5px;
+  	-webkit-text-stroke-color: black;
+  	 -webkit-text-fill-color: white;*/
+}
+.banner-container .banner-bottom-left p {
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: black;
+}
+
+
 .menubar {
-    font-size: large;
+	padding-top: 2.5%;
+	width: 100%;
+	overflow: hidden;
+	background-color: darkgray;
 }
-.menubar ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /*background-color: #333333;*/
-    background-color: black;
-}
+.menubar ul {
+	list-style-type: none;
+ 	margin: 0;
+  	padding: 0;
+ }
 .menubar ul li {
-    margin: 0;
-    padding: 0;
-    float: left;
+	float: left;
 }
+
 .menubar ul li a {
-    margin: 5px 20px 5px 20px;
-    display: block;
-    color: lightgray;
-    text-decoration: none;
-    padding: 18px;
+  display: block;
+  color: gray;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
 }
-.menubar ul li:hover {
-    background-color: #4d4d4d;
-    color: green;
-}
-.menubar ul li:hover a {
-    color: white;
-}
-.menubar .menubar-bottom-line {
-    margin: auto;
-    height: 3.5px;
-    background: rgb(51,51,51);
-    background: -moz-linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(45,70,75,1) 15%, rgba(37,94,106,1) 30%, rgba(0,212,255,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(45,70,75,1) 15%, rgba(37,94,106,1) 30%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(45,70,75,1) 15%, rgba(37,94,106,1) 30%, rgba(0,212,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#333333",endColorstr="#00d4ff",GradientType=1);
-}
-
-/* --- Start page banner --- */
-.startpage-banner {
-    /*display: grid;*/
-    position: relative;
-    height: 100%;
-    background-color: black;
-}
-.banner-image {
-    max-width: 100%;
-    max-height: 100vh;
-    margin: auto;
-}
-
-.text-block{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#frontpage-banner-holder {
-    margin: 60px 0px 60px 0px;
-}
-
-#content-box-banner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-}
-
-#content-box {
-    background-color: whitesmoke;
-    border-radius: 8px;
-    padding: 25px 30px 25px 30px;
-    margin: 5px 10px 5px 10px;
-    flex: 1;
-}
-
-#content-box div {
-    margin-bottom: 5px;
-    
-}
-#content-box button {
-    margin-top: 100%;
-    padding: 10px 20px 10px 20px;
-    background-color: lightskyblue;
-    border: none;
-    border-radius: 10%;
-    
+.menubar ul li a:hover {
+	color: black;
+	font-weight: bold;
 }
