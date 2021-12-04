@@ -1,77 +1,86 @@
-body { margin: 0; padding: 0; }
-
-.banner-container {
-	position: relative;
-}
-
-.banner-container img {
-	width: 100%;
-	height: auto;
-	background-size: cover;
-}
-
-.banner-top-left{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-.banner-bottom-left {
-	position: absolute;
-	bottom: 8px;
-  	left: 0px;
-}
-
-.banner-container .banner-top-left { width: 100%; } 
-.banner-container .banner-bottom-left {
-	width: 100%;
-	bottom: 30px;
-	background-image: linear-gradient(
-		to right, 
-		rgba(206, 206, 206, 0.9) , 
-		rgba(206, 206, 206, 0.8),
-		rgba(206, 206, 206, 0.7),
-		rgba(206, 206, 206, 0.2),
-		rgba(206, 206, 206, 0)
-		);
+* {
+	margin: 0; 
+	padding: 0;
 
 }
-.banner-container .banner-bottom-left * {
-	margin: 0px 0px 0px 50px; 
-	/*
-	-webkit-text-stroke-width: 0.5px;
-  	-webkit-text-stroke-color: black;
-  	 -webkit-text-fill-color: white;*/
-}
-.banner-container .banner-bottom-left p {
-	margin-bottom: 30px;
-	font-size: 20px;
-	color: black;
+
+body {
+    font-family: sans-serif;
 }
 
-
-.menubar {
-	padding-top: 2.5%;
-	width: 100%;
-	overflow: hidden;
-	background-color: darkgray;
+header {
+	height: 4em;
 }
-.menubar ul {
+
+nav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+  	width: 100%;
+  	height: 4em;
+}
+
+#navbar {
+
 	list-style-type: none;
- 	margin: 0;
-  	padding: 0;
- }
-.menubar ul li {
-	float: left;
+	background-color: #000;
+	
+
+  	overflow: hidden;
 }
 
-.menubar ul li a {
-  display: block;
-  color: gray;
-  padding: 10px 30px;
-  text-decoration: none;
-  text-align: center;
+#navbar li {
+	display: inline-block;
+	padding: 2em 2em 1em 2em;
 }
-.menubar ul li a:hover {
-	color: black;
-	font-weight: bold;
+
+#navbar a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#wrapper {
+	margin-right: auto;
+  	margin-left:  auto;
+  	max-width: 960px;
+  	padding-right: 1em;
+  	padding-left:  1em;
+
+}
+
+.fp-hero-img {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 1),
+    	rgba(0, 0, 0, 0.05),
+    	rgba(0, 0, 0, 0),
+    	rgba(0, 0, 0, 0),
+    	rgba(0, 0, 0, 0)
+	), url("images/low-poly-banner-dev.svg");
+	
+	height: 100vh;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	
+  	background-size: cover;
+
+  	margin-bottom: 3em;
+}
+
+.fp-hero-img-txt{
+	width: 80%;
+	text-align: left;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
+}
+
+.fp-content-article {
+	padding: 5em 2em 5em 2em;
+	
+	border-bottom: solid;
+	border-width: thin;
+	border-color: #c7c7c7;
 }
